@@ -68,7 +68,7 @@ in {
 
       sharedModules = mkOption {
         type = types.listOf
-          (types.anything // { description = "Home Manager module"; });
+          (types.unspecified // { description = "Home Manager module"; });
         default = [ ];
         example = [ /path/to/module.nix ];
         description = ''
